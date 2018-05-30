@@ -1,0 +1,15 @@
+server:
+    minThreads: 15
+    applicationConnectors:
+      - type: http
+        port: 14000
+        bindHost: 0.0.0.0
+    adminConnectors:
+      - type: http
+        port: 14001
+        bindHost: 0.0.0.0
+    requestLog:
+        appenders:
+          - type: console
+            timeZone: UTC
+            logFormat: null
