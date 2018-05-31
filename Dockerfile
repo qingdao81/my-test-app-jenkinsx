@@ -1,6 +1,5 @@
 FROM fabric8/java-alpine-openjdk8-jre
 
-RUN mvn clean package
 RUN jarfile=`find . -name "my-test-app-*SNAPSHOT.jar"`
 COPY $jarfile /tmp/my-test-app.jar
 COPY target/classes/app.yml /tmp/app.yml
