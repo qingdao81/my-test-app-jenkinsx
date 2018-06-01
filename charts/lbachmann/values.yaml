@@ -10,7 +10,7 @@ service:
   name: lbachmann
   type: ClusterIP
   externalPort: 80
-  internalPort: 8080
+  internalPort: 14000
   annotations:
     fabric8.io/expose: "true"
 resources:
