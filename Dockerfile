@@ -1,4 +1,5 @@
-FROM fabric8/java-alpine-openjdk8-jre
+FROM openjdk:8-jdk-slim
+#FROM fabric8/java-alpine-openjdk8-jre
 
 RUN jarfile=`find . -name "my-test-app-*SNAPSHOT.jar"`
 COPY $jarfile /tmp/my-test-app.jar
