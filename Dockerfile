@@ -7,9 +7,4 @@ COPY start.sh /tmp/start.sh
 
 RUN chmod a+x /tmp/start.sh
 
-ENV PORT 14000
-
-EXPOSE 14000
-EXPOSE 14001
-
 CMD ["/tmp/start.sh"]
